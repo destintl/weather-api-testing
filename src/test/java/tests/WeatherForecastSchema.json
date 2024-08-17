@@ -1,0 +1,91 @@
+{
+  "properties": {
+    "city": {
+      "properties": {
+        "id": {"type": "number"},
+        "name": {"type": "string"},
+        "coord": {
+          "properties": {
+            "lon": {"type": "number"},
+            "lat": {"type": "number"}
+          },
+          "required": ["lon", "lat"]
+        },
+        "country": {"type": "string"},
+        "population": {"type": "number"},
+        "timezone": {"type": "number"},
+        "sunrise": {"type": "number"},
+        "sunset": {"type": "number"}
+      },
+      "required": ["id", "name", "coord", "country", "timezone", "sunrise", "sunset"]
+    },
+    "cnt": {"type": "number"},
+    "cod": {"type": "string"},
+    "message": {"type": "number"},
+    "list": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "dt": {"type": "number"},
+          "pop": {"type": "number"},
+          "visibility": {"type": "number"},
+          "dt_txt": {"type": "string"},
+          "weather": {
+            "type": "array",
+            "items": {
+              "properties": {
+                "id": {"type": "number"},
+                "main": {"type": "string"},
+                "description": {"type": "string"},
+                "icon": {"type": "string"}
+              },
+              "required": ["id", "main", "description", "icon"]
+            }
+          },
+          "main": {
+            "properties": {
+              "temp": {"type": "number"},
+              "temp_min": {"type": "number"},
+              "temp_max": {"type": "number"},
+              "feels_like": {"type": "number"},
+              "pressure": {"type": "number"},
+              "humidity": {"type": "number"},
+              "sea_level": {"type": "number"},
+              "grnd_level": {"type": "number"},
+              "temp_kf": {"type": "number"}
+            },
+            "required": ["temp", "temp_min", "temp_max", "pressure", "humidity"]
+          },
+          "clouds": {
+            "properties": {
+              "all": {"type": "number"}
+            },
+            "required": ["all"]
+          },
+          "wind": {
+            "properties": {
+              "speed": {"type": "number"},
+              "deg": {"type": "number"},
+              "gust": {"type": "number"}
+            },
+            "required": ["speed", "deg"]
+          },
+          "sys": {
+            "properties": {
+              "pod": {"type": "string"}
+            },
+            "required": ["pod"]
+          },
+          "rain": {
+            "properties": {
+              "3h": {"type": "number"}
+            },
+            "required": []
+          }
+        },
+        "required": ["dt", "pop", "visibility", "dt_txt", "weather", "main", "clouds", "wind", "sys"]
+      }
+    }
+  },
+  "required": ["city", "cnt", "cod", "message", "list"]
+}
