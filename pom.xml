@@ -12,10 +12,8 @@
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
-
   <name>weather-api-testing</name>
   <url>http://maven.apache.org</url>
-
 
   <dependencies>
     <!-- https://mvnrepository.com/artifact/com.intuit.karate/karate-core -->
@@ -31,9 +29,6 @@
       <version>1.0.1</version>
       <scope>test</scope>
     </dependency>
-
-
-
 
     <dependency>
       <groupId>junit</groupId>
