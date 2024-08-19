@@ -31,6 +31,6 @@ These are some steps to run test on local environment:
 
 ## View the HTML report
 1. Navigate to the Report Location:
-    * Go to the `target/site` directory in your project folder.
+    * Go to the `target/karate-reports` directory in your project folder.
 2. Open the Report:
     * Open the `karate-summary.html` file in a web browser to view the test results.
