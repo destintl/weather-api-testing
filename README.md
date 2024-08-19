@@ -22,6 +22,7 @@
   ```
   
 ## [Local Run] How To Run It?
+Before run, enter your **appid** in variable **apiKey**
 
 These are some steps to run test on local environment:
 - `cd` to the base directory of this project
