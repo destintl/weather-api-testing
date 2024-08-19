@@ -2,7 +2,7 @@ Feature: Get Weather Forecast in Jakarta Selatan
 
   Background:
     * url 'http://api.openweathermap.org/data/2.5'
-    * def apiKey = 'd3e8b575395492d14bab22fce43036f8'
+    * def apiKey = '{InputYourAPIKey}'
     * def lat = '-6.2615'
     * def lon = '106.8101'
     * def expectedSchema = read('WeatherForecastSchema.json')
